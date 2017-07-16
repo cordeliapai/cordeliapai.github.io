@@ -1,0 +1,749 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Cordelia Pai 白欣田</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<!-- mobile tel color -->
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" type="image/png" href="hali2.png"/>
+<!-- font -->
+<link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="js/magnificPopup/popup.css"> 
+<link href="css/standard.css" rel="stylesheet">
+<!-- wow -->
+<link href="css/animate.css" rel="stylesheet">
+<style type="text/css">
+body {
+    font-family: 'Oswald', '微軟正黑體', sans-serif;
+    letter-spacing: 2px;
+    /*background: url('img/bg-body.jpg') 50% repeat;*/
+    background: #FDFDFD;
+    color: #000;
+}
+a { 
+    text-decoration: none;
+}
+.header { 
+	position: fixed;
+	top: 0;
+	left: 0;
+    z-index: 10;
+	width: 100%;
+	padding-bottom: 10px;
+}
+.header-mobile {
+    display: none;
+    background: url('img/logo.png') 50% 0 no-repeat;
+    -moz-background-size: auto 100%;
+    -webkit-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
+    background-color: rgba(255,255,255,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 80px;
+}
+@media (max-width: 480px) {
+    .header {
+        display: none;
+    }
+    .header-mobile {
+        display: block;
+    }
+}
+.mobile-nav-btn {
+    float: right;
+    width: 36px;
+    height: 36px;
+    margin: 20px 15px;
+    background: url('img/mobile-btn.png') 50% 0 no-repeat;
+    -moz-background-size: auto 100%;
+    -webkit-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
+}
+.container { 
+	/*padding-top: 155px;*/
+}
+.main-title {
+    display: block;
+    height: 115px;
+    background: url('img/logo.png') #000 0 0 no-repeat;
+    -moz-background-size: auto 100%;
+    -webkit-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
+}
+@media (max-width: 769px) {
+    .main-title {
+        -moz-background-size: 100% auto;
+        -webkit-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        background-size: 100% auto;
+    }
+}
+@media (max-width: 480px) {
+    .main-title {
+        height: 70px;
+    }
+}
+/* main-nav */
+.logo {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: url('img/logo.png') 0 50% no-repeat;
+    -moz-background-size: auto 100%;
+    -webkit-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
+}
+@media (max-width: 990px) {
+    .logo {
+        -moz-background-size: 90% auto;
+        -webkit-background-size: 90% auto;
+        -o-background-size: 90% auto;
+        background-size: 90% auto;
+    }
+}
+.main-nav {
+    height: 120px;
+    background: #FDFDFD;
+    color: #000;
+}
+.main-nav ul {
+    width: 90%;
+    margin: 0 5%;
+}
+@media (max-width: 480px) {
+    .main-nav ul {
+        width: 90%;
+        margin: 0 5%;
+    }
+}
+.main-nav li {
+    float: left;
+    height: 70px;
+}
+.main-nav li.nav-logo {
+    width: 28%;
+}
+.main-nav li.nav-notlogo {
+    height: 32px;
+    width: 24%;
+    margin-top: 38px;
+}
+.main-nav li>a {
+    display: block;
+    float: left;
+}
+.main-nav a {
+    letter-spacing: 3px;
+    color: #000;
+}
+.main-nav a:hover,
+.main-nav a.nav-current {
+    color: #FD0000;
+}
+.sub-nav {
+    background: rgba(100,100,100,0.8);
+    /*padding-top: 32px;*/
+}
+.sub-nav a {
+    display: block;
+    padding: 5px;
+    margin-right: 10px;
+}
+.sub-nav a:hover,
+.sub-nav a.v-active {
+    color: #FD0000;
+}
+
+/* mobile-nav */
+.mobile-nav {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    overflow: hidden;
+}
+@media (max-width: 480px) {
+    .mobile-nav {
+        display: block;
+    }
+}
+.mobile-nav ul {
+    float: right;
+    margin-right: 15px;
+    padding-top: 50px;
+}
+.mobile-nav li {
+    padding: 8px 0;
+}
+.mobile-nav a {
+    color: #FFF;
+}
+.mobile-sub-nav a {
+    display: block;
+    padding: 7px 0 3px 15px;
+    color: #FFF;
+}
+.mobile-nav a:hover,
+.mobile-sub-nav a:hover,
+.mobile-nav a.nav-current {
+    color: #FD0000;
+}
+
+/* video */
+.video-box { 
+    float: left;
+    width: 22%;
+    margin: 20px 1.5% 12px;
+    background: #000;
+}
+
+.video-box .video-link {
+    position: relative;
+    display: block;
+    width: 100%;
+    -moz-background-size:auto 100%;
+    -webkit-background-size:auto 100%;
+    -o-background-size:auto 100%;
+    background-size:auto 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.video-box .video-link:before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-bottom: 70%;
+}
+.video-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;  
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+    line-height: 25px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #FFF;
+    opacity: 0;
+}
+.video-mask:hover {
+    transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;  /* Firefox 4 */
+    -webkit-transition: opacity 0.5s;   /* Safari 和 Chrome */
+    -o-transition: opacity 0.5s;    /* Opera */
+    opacity: 1;
+}
+@media (max-width: 1024px) {
+	.video-box {
+		width: 30%;
+		margin: 20px 1.5%;
+	}
+}
+@media (max-width: 769px) {
+	.video-box {
+		width: 40%;
+		margin: 15px 5%;
+	}
+}
+@media (max-width: 480px) {
+	.video-box {
+		width: 90%;
+		margin: 15px 5%;
+	}
+}
+/* c-unit */
+.c-unit {
+    padding: 120px 4% 0;
+    min-height: 840px;
+}
+@media (max-width: 480px) {
+    .c-unit { 
+        padding: 105px 4% 0;
+        min-height: 440px;
+    }
+}
+.c-unit h3 {
+    display: none;
+    margin: 18px 1.8% 15px;
+    font-size: 16px;
+    font-weight: normal;
+}
+@media (max-width: 480px) {
+    .c-unit h3 { 
+        display: block;
+    }
+}
+.c-unit p {
+    letter-spacing: 2px;
+    word-break: break-word;
+}
+.c-home {
+    background: url('img/home.png') 50% 160px no-repeat;
+    background-size: 100% auto;
+}
+@media (max-width: 480px) {
+    .c-home { 
+        background-position-y: 80px;
+        background-size: 250% auto;
+    }
+}
+.c-contact {
+    background: url('img/contact.jpg') 75% 125px no-repeat;
+    background-size: 36% auto;
+}
+.contact-text-wrap {
+    margin: 200px 0 0 3%;
+    width: 42%;
+    text-align: right;
+    line-height: 36px;
+    font-size: 18px;
+}
+.contact-text-wrap table{
+    display: inline-block;
+}
+.contact-text-wrap td,
+.contact-text-wrap th {
+    padding: 0 5px;
+}
+.contact-text-wrap th {
+    text-align: left;
+    background: rgba(255,255,255,0.3);
+}
+.contact-text-wrap td {
+    text-align: right;
+    background: rgba(255,255,255,0.2);
+}
+.contact-text-wrap img {
+    float: right;
+    margin: 5px 5px 0 0;
+}
+@media (max-width: 769px) {
+    .c-contact {
+        background-position: 0 150px;
+        background-size: 100% auto;
+    }
+    .contact-text-wrap {
+        padding: 2%;
+        margin: 100px auto 0;
+        width: 90%;
+        text-align: center;
+    }
+    .contact-text-wrap img {
+        margin: 80% 5px 0 0;
+    }
+    .contact-text-wrap th {
+        background: rgba(255,255,255,0.8);
+    }
+    .contact-text-wrap td {
+        background: rgba(255,255,255,0.6);
+    }
+}
+@media (max-width: 480px) {
+    .c-contact {
+        min-height: 700px;
+    }
+    .contact-text-wrap {
+        margin: 44px auto 0;
+    }
+}
+.c-video {
+    position: fixed;
+    top: 155px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+}
+@media (max-width: 480px) {
+    .c-video { 
+        top: 100px;
+    }
+}
+.video-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    cursor: pointer;
+}
+@media (max-width: 769px) {
+    .video-close {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 24px;
+    }
+}
+.img-home-title {
+    display: block;
+    margin: 0 22.5% 0 50.5%;
+    width: 27%;
+}
+.img-home-pic {
+    display: block;
+    margin: 0 auto;
+    width: 55%;
+}
+.section .tableCell {
+    display: block;
+}
+/* about */
+.c-about {
+    background: url('img/about.jpg') 4% 170px no-repeat;
+    background-size: 45% auto;
+    padding-bottom: 30px;
+}
+.about-text-wrap {
+    position: relative;
+    float: right;
+    margin-right: 6%;
+    width: 45%;
+}
+@media (max-width: 990px) {
+    .c-about {
+        background-position: 50% 105px;
+        background-size: 160% auto;
+    }
+    .about-text-wrap {
+        background-color: rgba(255,255,255,0.2);
+        float: none;
+        margin-right: 0;
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .c-about {
+        background-position: 50% 155px;
+    }
+}
+.img-about-text1{
+    width: 100%;
+    margin: 8% 0 20%;
+}
+.link-vimeo {
+    position: absolute;
+    top: 78%;
+    left: 2%;
+    color: #480909;
+}
+.link-flickr {
+    position: absolute;
+    top: 91%;
+    left: 2%;
+    color: #480909;
+}
+.link-vimeo:hover,
+.link-flickr:hover {
+    color: #F79700;
+}
+@media (max-width: 480px) {
+    .link-vimeo,
+    .link-flickr {
+        font-size: 12px;
+    }
+}
+
+/**/
+.portflio-nav {
+    position: relative;
+}
+.portflio-nav .sub-nav {
+    display: none;
+    position: absolute;
+    top: 28px;
+    left: 0;
+}
+.portflio-nav:hover .sub-nav {
+    display: block;
+}
+
+</style>
+</head>
+<body>
+<div class="mainBody" style="opacity:0">
+    
+    <div class="container">
+        <div id="c-home" class="c-unit c-home"></div>
+
+        <div id="c-portfolio" class="c-unit c-portfolio">
+            <h3>PORTFOLIO</h3>
+            <div class="video-wrap clearfix"></div>
+        </div>
+
+        <div id="c-about" class="c-unit c-about clearfix">
+            <h3>ABOUT</h3>
+            <div class="about-text-wrap">
+                <img src="img/about_text.png" alt="" class="img-about-text1">
+                <!-- <a href="https://vimeo.com/saintlin" class="link-vimeo" target="_blank">https://vimeo.com/saintlin</a>
+                <a href="https://www.flickr.com/photos/22076977@N04/" class="link-flickr" target="_blank">https://www.flickr.com/photos/22076977@N04/</a> -->
+            </div>
+        </div>
+
+        <div id="c-contact" class="c-unit c-contact">
+            <h3>CONTACT</h3>
+            <div class="contact-text-wrap">
+                <table>
+                    <tr>
+                        <td>Tel</td>
+                        <th><span style="color:#000">0932-593590</span></th>
+                    </tr>
+                    <tr>
+                        <td>E-mail</td>
+                        <th>cordelia226@gmail.com</th>
+                    </tr>
+                </table>
+                <br>
+                <img src="img/hali.png" alt="" class="img-hali wow lightSpeedIn" data-wow-delay="0.3s">
+                <img src="img/hachi.png" alt="" class="img-hachi wow rollIn" data-wow-delay="0.3s">
+            </div>
+        </div>
+    </div>
+    
+    <div class="header">
+        <div class="main-nav">
+            <ul class="clearfix">
+                <li class="nav-logo">
+                    <a href="###" data-c="home" class="logo"></a>
+                </li>
+                <li class="portflio-nav nav-notlogo">
+                    <a href="###" class="js-video-select" data-c="portfolio" data-v="all">PORTFOLIO</a>
+                    <div class="sub-nav">
+                        <a href="###" class="js-video-select" data-c="portfolio" data-v="mv">MV</a>
+                        <a href="###" class="js-video-select" data-c="portfolio" data-v="cf">CF</a>
+                        <a href="###" class="js-video-select" data-c="portfolio" data-v="film">FILM</a>
+                        <a href="###" class="js-video-select" data-c="portfolio" data-v="promo">PROMO</a>
+                    </div>
+                </li>
+                <li class="about-nav nav-notlogo">
+                    <a href="###" data-c="about">ABOUT</a>
+                </li>
+                <li class="contact-nav nav-notlogo">
+                    <a href="###" data-c="contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header-mobile">
+        <div class="mobile-nav-btn"></div>
+    </div>
+
+    <div class="mobile-nav">
+        <ul class="clearfix">
+            <li>
+                <a href="###" data-c="home" class="">HOME</a>
+            </li>
+            <li class="portflio-nav">
+                <a href="###" class="js-video-select" data-c="portfolio" data-v="all">PORTFOLIO</a>
+                <div class="mobile-sub-nav">
+                    <a href="###" class="js-video-select" data-c="portfolio" data-v="mv">MV</a>
+                    <a href="###" class="js-video-select" data-c="portfolio" data-v="cf">CF</a>
+                    <a href="###" class="js-video-select" data-c="portfolio" data-v="film">FILM</a>
+                    <a href="###" class="js-video-select" data-c="portfolio" data-v="promo">PROMO</a>
+                </div>
+            </li>
+            <li class="about-nav">
+                <a href="###" data-c="about">ABOUT</a>
+            </li>
+            <li class="contact-nav">
+                <a href="###" data-c="contact">CONTACT</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+<script src="js/magnificPopup/popup.js"></script> 
+<script src="js/wow.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    /* portfolio initial */
+    var _videoDataArr = [], _videoHtmlArr = [], _videoHtml = '', _temp;
+    _videoDataArr = [
+        ['https://player.vimeo.com/video/221602125', 'https://i.vimeocdn.com/video/639923736_590x332.jpg', '艾怡良 Eve Ai《Waterfall 》Official Music Video', 'mv'],
+        ['https://www.youtube.com/watch?v=QYRC4NWotG4', 'https://i.ytimg.com/vi/QYRC4NWotG4/0.jpg', '全悅【This Is A War】Official Music Video', 'mv'],
+        ['https://www.youtube.com/watch?v=UHiZ_ZfEpyU', 'https://i.ytimg.com/vi/UHiZ_ZfEpyU/0.jpg', '蘇珮卿 Paige Su【 我們都是寂寞的 We\'re all lonely souls 】Official Music Video', 'mv'],
+        ['https://www.youtube.com/watch?v=Pt5H5790RUI', 'https://i.ytimg.com/vi/Pt5H5790RUI/0.jpg', '蘇珮卿 Paige Su【 寧靜海 Lunar Mare 】Official Music Video', 'mv'],
+        ['https://www.youtube.com/watch?v=VIzuz6zW-bg', 'https://i.ytimg.com/vi/VIzuz6zW-bg/0.jpg', '瑪莉咬凱利 Mary Bites Kerry - 就在星期五 Official Music Video', 'mv'],
+        ['https://www.youtube.com/watch?v=r1MLmoxNbyk', 'https://i.ytimg.com/vi/r1MLmoxNbyk/0.jpg', '魏如萱 waa wei [‭ ‬i‭ ‬will be fine‭ ‬] MV', 'mv'],
+        ['https://www.youtube.com/watch?v=dOrCtLWIFsM', 'https://i.ytimg.com/vi/dOrCtLWIFsM/0.jpg', '03.11《末路狂花》高雄巨蛋 巡迴演唱會 Teaser', 'promo'],
+        ['https://www.youtube.com/watch?v=VOD8RuFHHxc', 'https://i.ytimg.com/vi/VOD8RuFHHxc/0.jpg', 'Ty.-凹造型 Official Music Video', 'mv'],
+        ['https://www.youtube.com/watch?v=vyklSbH58u0', 'https://i.ytimg.com/vi/vyklSbH58u0/0.jpg', 'Crispy脆樂團 -【編織星空的人】Official MV', 'mv'],
+        ['https://www.youtube.com/watch?v=jmPyHo2rb_M', 'https://i.ytimg.com/vi/jmPyHo2rb_M/0.jpg', 'Easy Shen 沈簡單 - 燭光俱樂部 The Candlelight Club [Music Video]', 'mv'],
+        ['https://www.youtube.com/watch?v=YO2w2yi0B-Y', 'https://i.ytimg.com/vi/YO2w2yi0B-Y/0.jpg', 'skyline film 形象概念', 'promo'],
+        ['https://www.youtube.com/watch?v=Jz9t6aVhBNo', 'https://i.ytimg.com/vi/Jz9t6aVhBNo/0.jpg', 'skyline film 活動紀錄', 'promo'],
+    	['https://www.youtube.com/watch?v=saiJbqHBuew', 'https://i.ytimg.com/vi/saiJbqHBuew/0.jpg', '魏如萱 waa wei [你啊你啊] MV', 'mv'],
+    	['https://www.youtube.com/watch?v=ZYuR7iy-fYY', 'https://i.ytimg.com/vi/ZYuR7iy-fYY/0.jpg', '怕胖團 『天天開心』Music Video', 'mv'],
+        ['https://www.youtube.com/watch?v=8jeUCB8f34s', 'https://i.ytimg.com/vi/8jeUCB8f34s/0.jpg', '謝帝 【堵起】（廖人帥導演）', 'mv'],
+        ['https://www.youtube.com/watch?v=sA3ikFtJ_8E', 'https://i.ytimg.com/vi/sA3ikFtJ_8E/0.jpg', 'Dawen 王大文-【亂流】', 'mv'],
+        ['https://www.youtube.com/watch?v=JDJ7QMHjTlg', 'https://i.ytimg.com/vi/JDJ7QMHjTlg/0.jpg', '人人合輯“太極拳”RPG【Hello】Official Music', 'mv'],
+        ['https://www.youtube.com/watch?v=QsRCuROR9Kc', 'https://i.ytimg.com/vi/QsRCuROR9Kc/0.jpg', '王錚亮【相愛一場 】微電影 MV （廖人帥導演）', 'mv'],
+        ['https://www.youtube.com/watch?v=DFpELQmeK9k', 'https://i.ytimg.com/vi/DFpELQmeK9k/0.jpg', '香港迪士尼10週年主題曲 X 吳莫愁 X 張瑋 【從此以後Happily Ever After 】 MV （廖人帥導演）', 'mv'],
+        ['https://www.youtube.com/watch?v=_gghAmZV830', 'https://i.ytimg.com/vi/_gghAmZV830/0.jpg', '小S 【姐姐好餓】 MV （廖人帥導演）', 'mv'],
+        ['https://player.vimeo.com/video/159674119', 'https://i.vimeocdn.com/video/592258329_590x332.jpg', '李千娜 Nana Lee - 【最愛的人】 feat. 王大文 Dawen', 'mv'],
+        ['https://www.youtube.com/watch?v=6rEhQC6qpC8', 'https://i.ytimg.com/vi/6rEhQC6qpC8/0.jpg', 'Dawen 王大文 - 【美麗】 "Beautiful" (陳駿霖導演)', 'mv'],
+        ['https://www.youtube.com/watch?v=nSOO2G0jyJo', 'https://i.ytimg.com/vi/nSOO2G0jyJo/0.jpg', 'Dawen 王大文 - 【酸雨】 "Acid Rain"  (陳駿霖導演)', 'mv'],
+        ['https://www.youtube.com/watch?v=U4nZFn7hJwQ', 'https://i.ytimg.com/vi/U4nZFn7hJwQ/0.jpg', 'Van Ness 吳建豪 x Maejor 【ME AND YOU】 REMIX', 'mv'],
+        ['https://www.youtube.com/watch?v=ZmBJ2aPO-to', 'https://i.ytimg.com/vi/ZmBJ2aPO-to/0.jpg', 'VP1 【失眠控】', 'mv'],
+        ['https://player.vimeo.com/video/167400172', 'https://i.vimeocdn.com/video/571887246_590x332.jpg', 'VP1 【國民老公】', 'mv'],
+        ['https://www.youtube.com/watch?v=dbHV725tfVI', 'https://i.ytimg.com/vi/dbHV725tfVI/0.jpg', '柯大堡 KoDaBow 【 Paradise】 完整版MV-電影「青田街一號」片尾曲', 'mv'],
+        ['https://www.youtube.com/watch?v=1OMDarmI59k', 'https://i.ytimg.com/vi/1OMDarmI59k/0.jpg', 'Funcal 方治權【不能害怕】MV', 'mv'],
+        ['https://www.youtube.com/watch?v=RNL9YvS1Bds', 'https://i.ytimg.com/vi/RNL9YvS1Bds/0.jpg', '陳以岫 Izzy Chen【 圓 】', 'mv'],
+        ['https://www.youtube.com/watch?v=k3JpMEiW14c', 'https://i.ytimg.com/vi/k3JpMEiW14c/0.jpg', '陳以岫 Izzy Chen【 勇敢的原因 】', 'mv'],
+        ['https://www.youtube.com/watch?v=OY9S-hxW7Tw', 'https://i.ytimg.com/vi/OY9S-hxW7Tw/0.jpg', '2015 姚可傑【對得起自己Worthy of being myself 】', 'mv'],
+        ['https://www.youtube.com/watch?v=I0Cq1ffUyUg', 'https://i.ytimg.com/vi/I0Cq1ffUyUg/0.jpg', '2015 姚可傑 Jack Yao 首張個人專輯 面對太陽【 以後留給以後 Some Other Time 】', 'mv'],
+        ['https://player.vimeo.com/video/147815604', 'https://i.vimeocdn.com/video/546585023_590x332.jpg', '邰正宵 Samuel Tai【我只在乎你】', 'mv'],
+        ['https://player.vimeo.com/video/145716484', 'https://i.vimeocdn.com/video/543948257_590x332.jpg', '邰正宵 Samuel Tai【一個人的我依然會微笑】', 'mv'],
+
+        ['https://www.youtube.com/watch?v=OJWerfyOkXQ', 'https://i.ytimg.com/vi/OJWerfyOkXQ/0.jpg', '2017世大運中華隊宣傳片《TEAM UP》', 'cf'],
+        ['https://www.youtube.com/watch?v=EjH8MFQFHUg', 'https://i.ytimg.com/vi/EjH8MFQFHUg/0.jpg', '【植淨美】香氛洗衣精#FreshSense', 'cf'],
+        ['https://www.youtube.com/watch?v=gaTw7id9yKQ', 'https://i.ytimg.com/vi/gaTw7id9yKQ/0.jpg', '臺北我的主場 世界歡迎光臨 (#臺北世大運)', 'cf'],
+        ['https://www.youtube.com/watch?v=smEv3NmOdEA', 'https://i.ytimg.com/vi/smEv3NmOdEA/0.jpg', 'OSIM劇場-務實派的生存之道-閨密篇', 'cf'],
+        ['https://www.youtube.com/watch?v=Fs3HQV7BESA', 'https://i.ytimg.com/vi/Fs3HQV7BESA/0.jpg', 'OSIM劇場-務實派的生存之道-小夫妻篇', 'cf'],
+        ['https://www.youtube.com/watch?v=TzBZWN4olcU', 'https://i.ytimg.com/vi/TzBZWN4olcU/0.jpg', '2014臺北藝術節', 'cf'],
+        ['https://www.youtube.com/watch?v=v4EUOTowUAU', 'https://i.ytimg.com/vi/v4EUOTowUAU/0.jpg', '立頓奶茶 韋禮安代言【說好單身趴，放閃放到瞎】', 'cf'],
+        ['https://www.youtube.com/watch?v=-fQIXYzeKvw', 'https://i.ytimg.com/vi/-fQIXYzeKvw/0.jpg', '立頓奶茶 韋禮安代言【學分危機 ! 學會選課各種招】', 'cf'],
+        ['https://www.youtube.com/watch?v=H6g2CMCjkaA', 'https://i.ytimg.com/vi/H6g2CMCjkaA/0.jpg', '立頓奶茶 韋禮安代言【求職初體驗，忐忑超爆表】', 'cf'],
+        ['https://www.youtube.com/watch?v=jbwBm2HstRE', 'https://i.ytimg.com/vi/jbwBm2HstRE/0.jpg', 'Paktor(拍拖）亞洲超熱門交友APP - 別再做白日夢 情人節篇', 'cf'],
+        ['https://player.vimeo.com/video/182698004', 'https://i.vimeocdn.com/video/591683560_590x332.jpg', '2016 台中國際動畫影展 TVCF 片單篇', 'cf'],
+        ['https://player.vimeo.com/video/186051619', 'https://i.vimeocdn.com/video/595986602_590x332.jpg', '黃子軒與山平快 ZiXuan & Slow Train 2016 巡迴演唱會 CF', 'cf'],
+        ['https://player.vimeo.com/video/183983898', 'https://i.vimeocdn.com/video/594349398_590x332.jpg', '得意衛生紙 CF -【得意對決傳說】', 'cf'],
+        ['https://player.vimeo.com/video/182671553', 'https://i.vimeocdn.com/video/594350026_590x332.jpg', '2015 搖滾辦桌 TVCF 江湖篇', 'cf'],
+        ['https://player.vimeo.com/video/182672332', 'https://i.vimeocdn.com/video/591649400_590x332.jpg', '2015 搖滾辦桌 TVCF 叫賣篇', 'cf'],
+        ['https://player.vimeo.com/video/164135162', 'https://i.vimeocdn.com/video/567681618_590x332.jpg', 'Dove 多芬精華液洗卸液', 'cf'],
+        ['https://player.vimeo.com/video/164131986', 'https://i.vimeocdn.com/video/594201593_590x332.jpg', 'Za 美膚模式 CC棒', 'cf'],
+        ['https://player.vimeo.com/video/181744226', 'https://i.vimeocdn.com/video/590402779_590x332.jpg', 'YAMAHA 新世代國民車-勁豪125', 'cf'],
+        ['https://player.vimeo.com/video/181744975', 'https://i.vimeocdn.com/video/590403156_590x332.jpg', '康寶 No.1料理點子王 - 孩子天天躲蔬菜', 'cf'],
+        ['https://player.vimeo.com/video/181744603', 'https://i.vimeocdn.com/video/590402909_590x332.jpg', '康寶 No.1料理點子王 - 媽媽天菜計畫', 'cf'],
+        ['https://player.vimeo.com/video/156594590', 'https://i.vimeocdn.com/video/557655240_590x332.jpg', 'Bobbie Brown X Vogue', 'cf'],
+
+        ['https://www.youtube.com/watch?v=rwrZVGWaUbs', 'https://i.ytimg.com/vi/rwrZVGWaUbs/0.jpg', 'How to Survive a Zombie Apocalypse #Halloween - ZenFone 3 | ASUS', 'film'],
+        ['https://www.youtube.com/watch?v=g-Q06U9rmxI', 'https://i.ytimg.com/vi/g-Q06U9rmxI/0.jpg', '2013【特力家居愛的10時刻刻】時刻1~10完整版', 'film'],
+
+        ['https://player.vimeo.com/video/129000609', 'https://i.vimeocdn.com/video/520343514_590x332.jpg', '2014兄弟本色-熱狗頑童張震嶽演唱會open video', 'promo'],
+        ['https://player.vimeo.com/video/128839689', 'https://i.vimeocdn.com/video/520112403_590x332.jpg', '珍愛時刻-高意靜老師之2014婚禮主題秀', 'promo'],
+        ['https://player.vimeo.com/video/182681685', 'https://i.vimeocdn.com/video/594349874_590x332.jpg', '京城鉅誕建設案 / 都會篇', 'promo'],
+        ['https://player.vimeo.com/video/182682486', 'https://i.vimeocdn.com/video/591662871_590x332.jpg', '京城鉅誕建設案 / 公設篇 ', 'promo'],
+        ['https://player.vimeo.com/video/182679970', 'https://i.vimeocdn.com/video/591660112_590x332.jpg', '京城凱悅建設案 / 生活篇', 'promo'],
+        ['https://player.vimeo.com/video/182679370', 'https://i.vimeocdn.com/video/594200521_590x332.jpg', '京城凱悅建設案 - 國際海洋篇', 'promo'],
+        ['https://player.vimeo.com/video/182679369', 'https://i.vimeocdn.com/video/591659429_590x332.jpg', '京城凱悅建設案 - 室內篇', 'promo']
+    ];
+    for(i in _videoDataArr){
+        _temp = "<div class='video-box v-" + _videoDataArr[i][3] + "'><a href='" + _videoDataArr[i][0] + "' class='popup-iframe video-link' title='' style='background-image:url(" + _videoDataArr[i][1] + ");'><div class='video-mask'>" + _videoDataArr[i][2] + "</div></a></div>";
+
+        _videoHtmlArr.push(_temp);
+    }
+    _videoHtml = _videoHtmlArr.join('');
+    $('.video-wrap').html(_videoHtml);
+
+
+    /* event function */
+    $('.popup-image').magnificPopup({
+        type:'image'
+    });
+
+    $('.popup-iframe').magnificPopup({
+        type: 'iframe'
+    });
+
+    /* nav auto current */
+    var autoCurrent = true;
+    $(window).scroll(function(){
+        if(!autoCurrent){
+            return;
+        }
+        var scrollPos = $(window).scrollTop() + 1;
+        if(scrollPos < $('#c-portfolio').offset().top){
+            $('.main-nav a, .mobile-nav a').removeClass('nav-current');
+        }else if(scrollPos < $('#c-about').offset().top){
+            $('.main-nav a, .mobile-nav a').removeClass('nav-current');
+            $('.portflio-nav > a').addClass('nav-current');
+        }else if(scrollPos < $('#c-contact').offset().top){
+            $('.main-nav a, .mobile-nav a').removeClass('nav-current');
+            $('.about-nav a').addClass('nav-current');
+        }else{
+            $('.main-nav a, .mobile-nav a').removeClass('nav-current');
+            $('.contact-nav a').addClass('nav-current');
+        }
+    });
+    /* 滾動 */
+    $('.main-nav a, .mobile-nav a').click(function(){
+        var scrollLength = $('#c-' + $(this).data('c')).offset().top;
+        autoCurrent = false;
+        $('html, body').stop().animate({scrollTop:scrollLength}, 1000, function(){
+            autoCurrent = true;
+        });
+        $('.main-nav a, .mobile-nav a').removeClass('nav-current');
+        $(this).addClass('nav-current');
+        if($(this).closest('li').hasClass('portflio-nav')){
+            $(this).closest('li').children('a').addClass('nav-current');
+        }
+    });
+
+    /* sub-nav */
+    $('.js-video-select').click(function(){
+        if($(this).data('v') === 'all'){
+            $('.video-box').show();
+        }else if($(this).data('v') === 'film'){
+            $('.video-box').hide();
+            $('.v-film').show();
+        }else if($(this).data('v') === 'cf'){
+            $('.video-box').hide();
+            $('.v-cf').show();
+        }else if($(this).data('v') === 'mv'){
+            $('.video-box').hide();
+            $('.v-mv').show();
+        }else if($(this).data('v') === 'promo'){
+            $('.video-box').hide();
+            $('.v-promo').show();
+        }
+        $('.sub-nav, .mobile-sub-nav').find('a').removeClass('v-active');
+        $(this).addClass('v-active');
+    });
+
+    /* mobile-nav */
+    $('.mobile-nav-btn').click(function(){
+        $('.mobile-nav').stop().animate({'width':'115px'},function(){
+            $('.mobile-nav').addClass('mn-open');
+        });
+    });
+    /* mobile-nav-close */
+    $('.container, .header, .header-mobile').click(function(){
+        if(!$('.mobile-nav').hasClass('mn-open')){return;}
+        $('.mobile-nav').stop().animate({'width':'0'}, function(){
+            $('.mobile-nav').removeClass('mn-open');
+        });
+    });
+});
+
+/* first get in */
+$(window).load(function(){
+    $('.mainBody').css({'opacity':0}).animate({'opacity':1}, 1000);
+});
+
+new WOW().init();
+</script>
+
+</body>
+</html>
