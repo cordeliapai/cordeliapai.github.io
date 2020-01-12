@@ -583,10 +583,22 @@ $(function(){
     /* portfolio initial */
     var _videoDataArr = [], _videoHtmlArr = [], _videoHtml = '', _temp;
     _videoDataArr = [
+	['https://www.youtube.com/watch?v=W9Fq1HC_5hg', 'https://i.ytimg.com/vi/W9Fq1HC_5hg/0.jpg', '告五人 Accusefive【帶我去找夜生活 Night life.Take us to the light】', 'mv'],
+	['https://www.youtube.com/watch?v=Z7hyNxqVwFw', 'https://i.ytimg.com/vi/Z7hyNxqVwFw/0.jpg', '【鄭宜農 Enno Cheng –千千萬萬 Lightyears of Solitude】', 'mv'],
+	['https://www.youtube.com/watch?v=7XlqcS6B7WA', 'https://i.ytimg.com/vi/7XlqcS6B7WA/0.jpg', 'G.E.M.鄧紫棋【句號 Full Stop】Official Music Video', 'mv'],
+	['https://www.youtube.com/watch?v=RFIKYH2l6WM', 'https://i.ytimg.com/vi/RFIKYH2l6WM/0.jpg', '桂格蜜人蔘-5X秘蜜劇場', 'cf'],
+	['https://www.youtube.com/watch?v=aF2Ow7QEsP8', 'https://i.ytimg.com/vi/aF2Ow7QEsP8/0.jpg', '麥香 配大罐篇', 'cf'],
+	['https://player.vimeo.com/video/290960919', 'https://i.vimeocdn.com/video/726981513_590x332.jpg', '京晚八点就好这一口沸騰泡泡锅', 'cf'],
+	['https://player.vimeo.com/video/290952417', 'https://i.vimeocdn.com/video/726971011_590x332.jpg', '京晚八点就好这一口小粘人牙签肉', 'cf'],
+	['https://player.vimeo.com/video/290950451', 'https://i.vimeocdn.com/video/726966640_590x332.jpg', '京晚八点就好这一口熱感黑胶拿鉄', 'cf'],
+	['https://www.youtube.com/watch?v=W26OjhPU3b0', 'https://i.ytimg.com/vi/W26OjhPU3b0/0.jpg', '雀巢健康科學 | 四分衛阿山 【走過意外的旅程】', 'cf'],
+	['https://www.youtube.com/watch?v=e-NG23CR7mg', 'https://i.ytimg.com/vi/e-NG23CR7mg/0.jpg', '諾優能｜王傳一 【爸爸的小情歌】', 'cf'],
 	['https://www.youtube.com/watch?v=oSUVzr143Ec', 'https://i.ytimg.com/vi/oSUVzr143Ec/0.jpg', '2019 經典台灣啤酒 │我的大人WAY│談判篇', 'cf'],
         ['https://www.youtube.com/watch?v=ZnSDFGJIyk4', 'https://i.ytimg.com/vi/ZnSDFGJIyk4/0.jpg', '2019 經典台灣啤酒 │我的大人WAY│超商篇', 'cf'],
-        ['https://www.youtube.com/watch?v=r_DyjiUdAdE', 'https://i.ytimg.com/vi/r_DyjiUdAdE/0.jpg', '林俊傑 JJ Lin - SHOW THE WORLD (Official Music Video)', 'mv'],
+        ['https://www.youtube.com/watch?v=jd3LfcI4HvE', 'https://i.ytimg.com/vi/jd3LfcI4HvE/0.jpg', '小男孩樂團 Men Envy Children【旅行公路 Road Trip】', 'mv'],
+	['https://www.youtube.com/watch?v=r_DyjiUdAdE', 'https://i.ytimg.com/vi/r_DyjiUdAdE/0.jpg', '林俊傑 JJ Lin - SHOW THE WORLD (Official Music Video)', 'mv'],
 	['https://www.youtube.com/watch?v=WJUMQa1RdjI', 'https://i.ytimg.com/vi/WJUMQa1RdjI/0.jpg', '野人 李威慶【空島Sky Island】Official MV', 'mv'],
+	['https://www.youtube.com/watch?v=9me3QXeSUhQ', 'https://i.ytimg.com/vi/9me3QXeSUhQ/0.jpg', '惠氏【啟賦生機3幼兒成長專用配方】', 'cf'],
 	['https://www.youtube.com/watch?v=87LHRkAkmAs', 'https://i.ytimg.com/vi/87LHRkAkmAs/0.jpg', 'Dawen 王大文 【你的宇宙 “Your Universe”】Official MV', 'mv'],
 	['https://www.youtube.com/watch?v=qQtIlBC__1s', 'https://i.ytimg.com/vi/qQtIlBC__1s/0.jpg', 'Dawen 王大文 【國際太空站 "The International Space Station"】Official MV', 'mv'],
 	['https://www.youtube.com/watch?v=ZXyczc3OvIM', 'https://i.ytimg.com/vi/ZXyczc3OvIM/0.jpg', '知更 John Stoniae 【風箏/白雲 Kites / Clouds】Official MV', 'mv'],
